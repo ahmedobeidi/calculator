@@ -1,0 +1,148 @@
+@font-face {
+    font-family: digital-7;
+    src: url(../fonts/digital-7.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(74,50,27,1) 48%, rgba(13,34,38,1) 100%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.calculator {
+    width: 300px;
+    padding: 10px;
+    background-color: #ebddd2;
+    border-right: 6px solid #1a1d1d;
+    border-bottom: 6px solid #1a1d1d;
+    border-radius: 5px;
+}
+
+.screen {
+    background-color: #a1baa4;
+    font-family: digital-7;
+    font-size: 20px;
+    border-top: 20px solid #363b41;
+    border-bottom: 20px solid #363b41;
+    border-right: 10px solid #363b41;
+    border-left: 10px solid #363b41;
+    box-shadow: inset 0px 0px 0px 3px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px rgb(122, 127, 135);
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+#operations-label {
+    padding: 10px;
+}
+
+#result-label {
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    height: 50px;
+    font-size: 18px;
+    border-radius: 10px;
+    color: #e5e1d5;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.clear {
+    width: 47%;
+    background-color: #ec6c15;
+    border-bottom: 8px solid #b54a00;
+}
+
+.equal {
+    width: 47%;
+    background-color: #24a19d;
+    border-bottom: 8px solid #1b7870;
+}
+
+.number {
+    width: 23.7%;
+    background-color: #45484d;
+    border-bottom: 8px solid #1a1d1d;
+}
+
+.divide {
+    width: 23.7%;
+    background-color: #e3bb1d;
+    border-bottom: 8px solid #a87217 ;
+}
+
+.multiply {
+    width: 23.7%;
+    background-color: #c32d2c;
+    border-bottom: 8px solid #8f2520;
+}
+
+.minus {
+    width: 23.7%;
+    background-color: #8a7bd7;
+    border-bottom: 8px solid #463a85 ;
+}
+
+.plus {
+    width: 23.7%;
+    background-color: #47ad2e;
+    border-bottom: 8px solid #358522 ;
+}
+
+.bottom {
+    width: 36%;
+}
+
+.clear:hover {
+    background-color:  hsl(24, 85%, 56%);
+    border-bottom: 8px solid hsl(24, 85%, 56%);
+}
+
+.equal:hover {
+    background-color: hsl(178, 63%, 45%);
+    border-bottom: 8px solid hsl(178, 63%, 45%);
+}
+
+.divide:hover {
+    background-color: hsl(48, 78%, 57%);
+    border-bottom: 8px solid hsl(48, 78%, 57%);
+}
+
+.multiply:hover {
+    background-color: hsl(0, 63%, 57%);
+    border-bottom: 8px solid hsl(0, 63%, 57%);
+}
+
+.minus:hover {
+    /* background-color: hsl(250, 53%, 73%); */
+    border-bottom: 8px solid hsl(250, 53%, 66%);
+}
+
+.plus:hover {
+    background-color: hsl(108, 58%, 53%);
+    border-bottom: 8px solid hsl(108, 58%, 53%);
+}
+
+.number:hover {
+    background-color: hsl(0, 0%, 40%);
+    border-bottom: 8px solid hsl(0, 0%, 40%);
+}
