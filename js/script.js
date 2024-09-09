@@ -76,6 +76,7 @@ function calculate() {
             }
             mathString = operationsLable.textContent;
             result = eval(mathString);
+            result = result.toFixed(4).replace(/\.0+$/, '');
             operationsLable.textContent = result;
             programStoped = true;
         }
